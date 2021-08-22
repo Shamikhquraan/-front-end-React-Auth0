@@ -29,18 +29,18 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/">
                 {/* TODO: if the user is logged in, render the `BestBooks` component, if they are not, render the `Login` component */}
-                
                 {
                   isAuthenticated &&
                   <BestBooks />
                 }
-                
               </Route>
 
 
 
               {/* TODO: add a route with a path of '/profile' that renders a `Profile` component */}
               <Route exact path="/profile">   <Profile /> </Route>
+
+              {( isAuthenticated ? <LogoutButton/>:<LoginButton/>)}
             </Switch>
             <Footer />
           </IsLoadingAndError>
