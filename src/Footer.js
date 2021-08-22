@@ -1,6 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
+import { Auth0Provider } from "@auth0/auth0-react";
+
 
 class Footer extends React.Component {
   render() {
