@@ -33,3 +33,19 @@ How will you approach each other and the challenge of building an application kn
 
 
 
+**Author**: Shamikh Quraan, Dima zeklam
+
+## Overview: Authorization Code Flow  
+
+
+
+
+Name of feature: Lab 11 .
+
+Estimate of time needed to complete: 2 Hours.
+
+Start time: 1:30
+
+Finish time: 3:30
+
+Actual time needed to complete: 2 hours
