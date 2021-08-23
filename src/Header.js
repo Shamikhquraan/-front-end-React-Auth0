@@ -9,6 +9,7 @@ import LogIN from './Button';
 
 
 import './Header.css';
+import LoginButton from './LoginButton';
 
 class Header extends React.Component {
 

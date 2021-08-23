@@ -1,0 +1,11 @@
+.tab2 {
+
+    /* border: tomato solid; */
+    margin: 0rem auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: brown;
+    padding-bottom: 5%;
+    }
