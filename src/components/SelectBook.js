@@ -18,7 +18,7 @@ class SelectBook extends React.Component {
               <Modal.Body>
                 <Form.Group className="mb-3">
                   <Form.Label>
-                    Email address (the sign in email by default)
+                    Email address - will take the auth email
                   </Form.Label>
                   <Form.Control
                     type="email"
@@ -33,7 +33,7 @@ class SelectBook extends React.Component {
                   <Form.Label>Title</Form.Label>
                   <Form.Control
                     type="text"
-                    placeholder="Lord of the Ring"
+                    placeholder="write title"
                     id="title"
                     required
                   />
@@ -42,7 +42,7 @@ class SelectBook extends React.Component {
                   <Form.Label>Status</Form.Label>
                   <Form.Control
                     type="text"
-                    placeholder="In Stock"
+                    placeholder="add status"
                     id="status"
                     required
                     
@@ -51,7 +51,7 @@ class SelectBook extends React.Component {
     
                 <Form.Group className="mb-3">
                   <Form.Label>Book Description</Form.Label>
-                  <Form.Control as="textarea" rows={5} id="desc" />
+                  <Form.Control as="textarea"  placeholder="Add Description" rows={5} id="desc" />
                 </Form.Group>
               </Modal.Body>
               <Modal.Footer>

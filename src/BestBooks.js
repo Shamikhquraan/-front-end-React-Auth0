@@ -1,6 +1,7 @@
 import React from 'react';
 import SelectBook from "./components/SelectBook";
 import "./BestBooks.css";
+import { Button } from 'react-bootstrap';
 import  Card  from 'react-bootstrap/Card';
 import { withAuth0 } from '@auth0/auth0-react';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -106,7 +107,7 @@ class MyFavoriteBooks extends React.Component {
           <p>
             This is a collection of my favorite books
           </p>
-          <button onClick={this.handelShowModel}> Add New Book</button>
+          <Button onClick={this.handelShowModel}> Add New Book</Button>
 
         </Jumbotron>
         <div className='tab2'>
@@ -114,24 +115,24 @@ class MyFavoriteBooks extends React.Component {
           return(
           <Card key ={key} style={{ width: '18rem' }}>
             <Card.Body>
-            <img
+            <Card.Img
             className="d-block w-100"
             src='https://www.concrete-online.co.uk/wp-content/uploads/2020/07/dark-gloomy-books-pages-preview.jpg'
             alt={element.title}
           />
-              <Card.Title>{element.title}</Card.Title>
+              <Card.Title>● {element.title}</Card.Title>
               <Card.Text>
-              {element.description}
+              ● {element.description}
               </Card.Text>
               <Card.Text>
-              {element.status}
+              ● {element.status}
               </Card.Text>
               <Card.Text>
-              {element.email}
+              ● {element.email}
               </Card.Text>
             </Card.Body>
-            <h3 className="favorites"> 📧email: </h3>
-          <button onClick={()=>this.deleteBook(element._id)}>Delete</button>
+            <h3 className="favorites"> 🧾Delet Book: </h3>
+          <Button onClick={()=>this.deleteBook(element._id)}>Delete</Button>
           </Card>)
         })
         }
