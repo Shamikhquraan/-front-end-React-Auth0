@@ -49,3 +49,21 @@ Start time: 1:30
 Finish time: 3:30
 
 Actual time needed to complete: 2 hours
+
+Name of feature:lab 12
+Estimate of time needed to complete: 2
+
+Start time: 2
+
+Finish time: 5
+
+Actual time needed to complete: 3
+
+Name of feature:lab 13
+Estimate of time needed to complete: 3
+
+Start time: 3
+
+Finish time: 6
+
+Actual time needed to complete: 3
