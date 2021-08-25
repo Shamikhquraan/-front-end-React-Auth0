@@ -1,5 +1,6 @@
 import React from 'react';
 import SelectBook from "./components/SelectBook";
+import UpdateBookss from './updaate';
 import "./BestBooks.css";
 import { Button } from 'react-bootstrap';
 import  Card  from 'react-bootstrap/Card';
@@ -20,6 +21,8 @@ class MyFavoriteBooks extends React.Component {
       books: [] ,
       showData:false,
       show:false,
+      showUpdate: false,
+      bookToUpdate:{},
     }
   }
    componentDidMount = async ()=> {
@@ -97,7 +100,24 @@ class MyFavoriteBooks extends React.Component {
     });
     
   }
+ 
+  bookToUpdate = async (bookInf) => { 
+    await this.setState({
+      showUpdate: true,
+      bookToUpdate :bookInf,
+    });
+    
+  }
 
+ // **********************************************************************************************************************************
+
+  handleUpdateBook = async (bookInf) => {
+
+    let DataResult = await axios.put(`${process.env.REACT_APP_SERVER}/updateBook/${bookInf._id}`,bookInf);// put like post
+    this.setState({
+      book: DataResult.data,
+    });
+  }
   render() {
     
     return (
@@ -133,12 +153,17 @@ class MyFavoriteBooks extends React.Component {
             </Card.Body>
             <h3 className="favorites"> 🧾Delet Book: </h3>
           <Button onClick={()=>this.deleteBook(element._id)}>Delete</Button>
+       
+          <h3 className="favorites"> Update Book: </h3>
+       <Button onClick={()=> this.bookToUpdate(element)} >Update</Button>
+
           </Card>)
         })
         }
         </div>
         <SelectBook show={this.state.show} handleClose={this.handleClose} handleAddBook={this.handleAddBook} />
 
+        <UpdateBookss showUpdate={this.state.showUpdate} handleClose={()=>this.handleClose} handleUpdateBook={this.handleUpdateBook} bookInf={this.state.bookToUpdate}/>
       </>
     )
   }
