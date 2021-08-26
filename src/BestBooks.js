@@ -8,9 +8,8 @@ import { withAuth0 } from '@auth0/auth0-react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import './BestBooks.css';
-const axios = require('axios');
-require('dotenv').config();
-
+import axios from "axios";
+ //dassd
 
 
 class MyFavoriteBooks extends React.Component {
