@@ -162,7 +162,7 @@ class MyFavoriteBooks extends React.Component {
         </div>
         <SelectBook show={this.state.show} handleClose={this.handleClose} handleAddBook={this.handleAddBook} />
 
-        <UpdateBookss showUpdate={this.state.showUpdate} handleClose={()=>this.handleClose} handleUpdateBook={this.handleUpdateBook} bookInf={this.state.bookToUpdate}/>
+        <UpdateBookss showUpdate={this.state.showUpdate} handleClose={this.handleClose} handleUpdateBook={this.handleUpdateBook} bookInf={this.state.bookToUpdate}/>
       </>
     )
   }
