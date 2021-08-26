@@ -15,6 +15,6 @@ ReactDOM.render(
   >
     <App />
   </Auth0Provider>,
-  document.getElementById("fff")
+  document.getElementById("root")
 
   );
