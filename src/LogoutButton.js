@@ -13,6 +13,6 @@ function LogoutButton() {
       logout({ returnTo: window.location.origin });
     }}>Log out</Button>
   );
-}
+}//55555
 
 export default LogoutButton;
