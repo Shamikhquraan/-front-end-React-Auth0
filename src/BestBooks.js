@@ -87,6 +87,7 @@ class MyFavoriteBooks extends React.Component {
  handleClose=async ()=>{
     await this.setState({
       show:false,
+      showUpdate: false ,
     })
   }
 
@@ -97,7 +98,7 @@ class MyFavoriteBooks extends React.Component {
     this.setState({
       books: bookData.data,
     });
-    
+
   }
  
   bookToUpdate = async (bookInf) => { 
@@ -105,7 +106,6 @@ class MyFavoriteBooks extends React.Component {
       showUpdate: true,
       bookToUpdate :bookInf,
     });
-    
   }
 
  // **********************************************************************************************************************************
