@@ -114,7 +114,7 @@ class MyFavoriteBooks extends React.Component {
 
     let DataResult = await axios.put(`${process.env.REACT_APP_SERVER}/updateBook/${bookInf._id}`,bookInf);// put like post
     this.setState({
-      book: DataResult.data,
+      books: DataResult.data,
     });
   }
   render() {
